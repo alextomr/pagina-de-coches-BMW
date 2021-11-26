@@ -1,0 +1,29 @@
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #feffff 0, #efffff 12.5%, #ddfffd 25%, #cafbf7 37.5%, #b5f2f2 50%, #9fe9ee 62.5%, #8ae1ec 75%, #76d9eb 87.5%, #62d1eb 100%);
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-position: center;
+  }
+  .img-7 {
+    width: 500px;
+    height:300px;
+  }
+  .img-8
+  {
+    width: 500px;
+    height:300px;
+  }
+ .img-9 {
+  width: 500px;
+  height:300px;
+ }
+ #bmwserie4cabrio {
+   position: relative;
+   left:650px ;
+   bottom: 440px;
+ }
+ #bmwserie6 {
+ position: relative;
+ left: 1300px ;
+ bottom: 880px;
+}

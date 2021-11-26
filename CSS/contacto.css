@@ -1,0 +1,8 @@
+body {
+    background: url(../Imagenes/imagescontacto.png) no-repeat center fixed; 
+    background-size: cover
+    }
+    .img-16{
+        width:200px;
+        height:200px;
+    }

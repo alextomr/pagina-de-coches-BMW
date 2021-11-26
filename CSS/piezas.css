@@ -1,0 +1,25 @@
+body {
+    background-image: radial-gradient(circle, #90b766, #53bb88, #00bab1, #00b5d6, #00aaeb, #2cacf2, #43aff8, #56b1fe, #22c6ff, #00daff, #25ebfc, #5ffbf1);
+}
+.img-4 {
+    width: 500px;
+    height:300px;
+}
+.img-5{
+    width: 500px;
+    height:300px;
+}
+.img-6{
+    width: 500px;
+    height:300px;
+}     
+#filtro {
+    position: relative;
+    left:650px ;
+    bottom: 440px;
+  }
+  #bateria {
+  position: relative;
+  left: 1300px ;
+  bottom: 880px;
+ }

@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-position: center;
+}
+.img-10 {
+    width: 500px;
+    height:300px;
+    
+}
+.img-11 {
+    width: 500px;
+    height:300px;
+}
+.img-12 {
+    width: 500px;
+    height:300px;
+}
+#bmwi3{
+    position: relative;
+    left:650px ;
+    bottom: 460px;
+  }
+  #bmwixdrive40 {
+  position: relative;
+  left: 1300px ;
+  bottom: 920px;
+ }
+ #BMwi4 {
+    
+ }
+ 
