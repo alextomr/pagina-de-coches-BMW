@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <Title>
+    PIEZAS
+  </Title>
+    <link rel="stylesheet" href="../CSS/piezas.css">
+    <link rel="shortcut icon" type="image/JPG" href="../Imagenes/logo tornillo12.jpg"/>
+
+    <style>
+     
+      .intro{
+      position:fixed;
+      left:0;
+      top:0;
+      background-color:blue;
+      background-color:rgb(5, 38, 131);
+      border:0.1px solid rgb(1, 165, 241);
+      z-index:10;
+      }
+      
+      </style>
+</head>
+<body>
+  <div id="i1" class="intro"></div><div id="i2" class="intro"></div><div id="i3"
+class="intro"></div><div id="i4" class="intro"></div><div id="i5" class="intro"></div><div
+id="i6" class="intro"></div><div id="i7" class="intro"></div><div id="i8" class="intro"></div>
+<script language="JavaScript1.2">
+
+
+var speed=100
+var temp=new Array()
+var temp2=new Array()
+
+var clipright=(window.innerWidth)?window.innerWidth:document.body.clientWidth
+clipleft=0
+for (i=1;i<=8;i++){
+temp[i]=document.getElementById("i"+i).style
+temp[i].width=(window.innerWidth)?window.innerWidth-15+'px':document.body.clientWidth+'px'
+temp[i].height=(window.innerHeight)?window.innerHeight/8+'px':document.body.offsetHeight/8+'px'
+temp[i].top=(i-1)*parseInt(temp[i].height) + 'px'
+}
+
+function openit(){
+
+clipright-=speed
+for (i=1;i<=8;i=i+2){
+temp[i].clip="rect(0 "+clipright+"px auto 0)"
+}
+clipleft+=speed
+for (i=2;i<=8;i=i+2){
+temp[i].clip="rect(0 auto auto "+clipleft+"px)"
+}
+if (clipright<=0){
+
+for (i=1;i<=8;i++)
+temp[i].display="none"
+
+clearInterval(stopit)
+}
+}
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+</script>
+  <div id="aceite">
+  <h2>ACEITE GENUINO BMW</h2>
+
+  <ul>
+    <li>Mejora el arranque en frío y consigue mejores prestaciones en temperaturas extremas.</li>
+    <li>Reduce el consumo de combustible</li>
+    <li>Disminuye el consumo de aceite</li>
+  </ul>  
+  
+    <img class="img-4" src="../Imagenes/aceitemotor.png">
+    <button type="button" onclick="alert('PIEZA AÑADIDA AL CARRITO')">COMPRAR</button>
+  </div>
+  <div id="filtro">
+    <h2>FILTRO DE ACEITE ORIGINAL BMW</h2>
+
+    <ul>
+      <li>Elimina la suciedad con eficacia.</li>
+      <li>es extremadamente duradero </li>
+      <li> limpia eficazmente el aceite</li>
+    </ul>  
+    
+      <img class="img-5" src="../Imagenes/filtrobwm.jpg">
+      <button type="button" onclick="alert('PIEZA AÑADIDA AL CARRITO')">COMPRAR</button>
+    </div>
+      <div id="bateria">
+      <h2>BATERÍAS ORIGINALES BMW</h2>
+
+    <ul>
+      <li>Sustitución de la batería</li>
+      <li>Registro de la batería en la unidad motor </li>
+      <li> Eliminación de la batería de forma respetuosa con el medio ambiente</li>
+    </ul>  
+    
+      <img class="img-6" src="../Imagenes/BATERIABMW.jpg">
+      <button type="button" onclick="alert('PIEZA AÑADIDA AL CARRITO')">COMPRAR</button>
+    </div>
+
+  
+    
+  </body>
