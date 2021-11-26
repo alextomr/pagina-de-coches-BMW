@@ -1,0 +1,237 @@
+<!DOCTYPE	html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>
+		INICIO
+	</title>
+    <link rel="shortcut icon" type="image/JPG" href="Imagenes/LOGO BMWW.jpg"/>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body> 
+	<h2 id="fly">CONCESIONARIO BMW</h2>
+
+	<script type="text/javascript">
+	
+	//Flying Letters script- by Matthias (info@freejavascripts.f2s.com)
+	// Modified by Twey for efficiency and compatibility
+	//For this script and more, visit Dynamic Drive: http://www.dynamicdrive.com
+	
+	//Configure message to display. Use "$" for linebreak
+	//By default, set to just grab the text from element with ID="fly"
+	message = document.getElementById("fly").innerHTML; // $ = taking a new line
+	distance = 50; // pixel(s)
+	speed = 200; // milliseconds
+	
+	var txt="",
+		num=0,
+		num4=0,
+		flyofle="",
+		flyofwi="",
+		flyofto="",
+		fly=document.getElementById("fly");
+	
+	
+	function stfly() {
+		for(i=0;i != message.length;i++) {
+			if(message.charAt(i) != "$")
+				txt += "<span style='position:relative;visibility:hidden;' id='n"+i+"'>"+message.charAt(i)+"<\/span>";
+			else
+				txt += "<br>";
+		}
+		fly.innerHTML = txt;
+		txt = "";
+		flyofle = fly.offsetLeft;
+		flyofwi = fly.offsetWidth;
+		flyofto = fly.offsetTop;
+		fly2b();
+	}
+	
+	function fly2b() {
+		if(num4 != message.length) {
+			if(message.charAt(num4) != "$") {
+				var then = document.getElementById("n" + num4);
+				then.style.left = flyofle - then.offsetLeft + flyofwi / 2 + 'px';
+				then.style.top = flyofto - then.offsetTop + distance + 'px';
+				fly3(then.id, parseInt(then.style.left), parseInt(then.style.left) / 5, parseInt(then.style.top), parseInt(then.style.top) / 5);
+			}
+			num4++;
+			setTimeout("fly2b()", speed);
+		}
+	}
+	
+	function fly3(target,lef2,num2,top2,num3) {
+		if((Math.floor(top2) != 0 && Math.floor(top2) != -1) || (Math.floor(lef2) != 0 && Math.floor(lef2) != -1)) {
+			if(lef2 >= 0)
+				lef2 -= num2;
+			else
+				lef2 += num2 * -1;
+			if(Math.floor(lef2) != -1) {
+				document.getElementById(target).style.visibility = "visible";
+				document.getElementById(target).style.left = Math.floor(lef2) + 'px';
+			} else {
+				document.getElementById(target).style.visibility = "visible";
+				document.getElementById(target).style.left = Math.floor(lef2 + 1) + 'px';
+			}
+			if(lef2 >= 0)
+				top2 -= num3
+			else
+				top2 += num3 * -1;
+			if(Math.floor(top2) != -1)
+				document.getElementById(target).style.top = Math.floor(top2) + 'px';
+			else
+				document.getElementById(target).style.top = Math.floor(top2 + 1) + 'px';
+			setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",50)
+		}
+	}
+	
+	stfly()
+	
+	</script>
+	<div 
+    id="gif"><img class="img-19"src="https://i.pinimg.com/originals/46/aa/a4/46aaa4574cc27b519c56ef4d0da82403.gif" alt="BMW"> 
+    </div>
+
+ <p>concesionario de coches de todo tipo</p>
+ <ul><li class="INICIO"><a href="">INICIO</a></li>
+  <li><a href="html/piezas.html">PIEZAS</a>
+  <li>
+    MODELOS (coches)
+    <ul>
+      <li><a href="html/electricos.html">ELÉCTRICOS</a></li>
+      <li><a href="html/gasolina.html">GASOLINA</a></li>
+      <li><a href="html/diesel.html">DIESEL</a></li>
+    </ul>
+  </li>
+  <li><a href="html/motos.html">MOTOS</a></li>
+  <li><a href="html/contacto.html">CONTACTO</a></li>
+</ul>
+ </div>
+ 
+  <div class="caja">
+<h2>
+  <div id="LINK"> 
+   <p>PARA SU SEGURIDAD PULSE AQUI</p>
+  
+  <button onclick="document.location='https://www.martimotos.com/es/cascos-de-moto-c3?gclid=Cj0KCQjw8p2MBhCiARIsADDUFVGkW3vKFAoAdgDYnTEbxTerE3rzp0SKZSvq4IIWegJznpO0By98NXQaArKZEALw_wcB'">PULSAME</button>
+ </div>
+</h2>
+  </div>
+</body>
+<script language="JavaScript">
+
+
+
+	//Comment trail script- By Kurt (kurt.grigg@virgin.net)
+	
+	//Script featured on Dynamic Drive
+	
+	//Visit http://www.dynamicdrive.com for this script and more
+	
+	
+	
+	colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+	
+	n = 10;
+	
+	y = 0;
+	
+	x = 0;
+	
+	n6=(document.getElementById&&!document.all);
+	
+	ns=(document.layers);
+	
+	ie=(document.all);
+	
+	d=(ns||ie)?'document.':'document.getElementById("';
+	
+	a=(ns||n6)?'':'all.';
+	
+	n6r=(n6)?'")':'';
+	
+	s=(ns)?'':'.style';
+	
+	if (ns){
+	
+	for (i = 0; i < n; i++)
+	
+	document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+	
+	}
+	
+	if (ie)
+	
+	document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+	
+	if (ie||n6){
+	
+	for (i = 0; i < n; i++)
+	
+	document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+	
+	}
+	
+	if (ie)
+	
+	document.write('</div></div>');
+	
+	(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+	
+	function Mouse(evnt){
+	
+	y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+	
+	x = (ns||n6)?evnt.pageX+1:event.x+1;
+	
+	}
+	
+	(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+	
+	function animate(){
+	
+	o=(ns||n6)?window.pageYOffset:0;
+	
+	if (ie)con.style.top=document.body.scrollTop + 'px';
+	
+	for (i = 0; i < n; i++){
+	
+	var temp1 = eval(d+a+"dots"+i+n6r+s);
+	
+	
+	
+	randcolours = colours[Math.floor(Math.random()*colours.length)];
+	
+	(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+	
+	if (i < n-1){
+	
+	 var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+	
+	 temp1.top = parseInt(temp2.top) + 'px';
+	
+	 temp1.left = parseInt(temp2.left) + 'px';
+	
+	 } 
+	
+	else{
+	
+	 temp1.top = y+o + 'px';
+	
+	 temp1.left = x + 'px';
+	
+	 }
+	
+	}
+	
+	setTimeout("animate()",10);
+	
+	}
+	
+	animate();
+	
+	// -->
+	
+	</script>
+
+</html>
